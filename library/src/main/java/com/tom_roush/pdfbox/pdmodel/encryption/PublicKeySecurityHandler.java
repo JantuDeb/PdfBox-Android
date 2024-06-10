@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 
 package com.tom_roush.pdfbox.pdmodel.encryption;
 
@@ -71,39 +72,48 @@ import org.bouncycastle.cms.RecipientInformation;
 import org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
 import org.bouncycastle.util.Arrays;
 
+*/
 /**
  * This class implements the public key security handler described in the PDF specification.
  *
  * @see PublicKeyProtectionPolicy to see how to protect document with this security handler.
  * @author Benoit Guillon
- */
+ *//*
+
 public final class PublicKeySecurityHandler extends SecurityHandler
 {
-    /** The filter name. */
+    */
+/** The filter name. *//*
+
     public static final String FILTER = "Adobe.PubSec";
 
     private static final String SUBFILTER4 = "adbe.pkcs7.s4";
     private static final String SUBFILTER5 = "adbe.pkcs7.s5";
 
-    /**
+    */
+/**
      * Constructor.
-     */
+     *//*
+
     public PublicKeySecurityHandler()
     {
     }
 
-    /**
+    */
+/**
      * Constructor used for encryption.
      *
      * @param publicKeyProtectionPolicy The protection policy.
-     */
+     *//*
+
     public PublicKeySecurityHandler(PublicKeyProtectionPolicy publicKeyProtectionPolicy)
     {
         setProtectionPolicy(publicKeyProtectionPolicy);
         setKeyLength(publicKeyProtectionPolicy.getEncryptionKeyLength());
     }
 
-    /**
+    */
+/**
      * Prepares everything to decrypt the document.
      *
      * @param encryption encryption dictionary, can be retrieved via
@@ -116,7 +126,8 @@ public final class PublicKeySecurityHandler extends SecurityHandler
      * @throws IOException If there is an error accessing data. If verbose mode
      * is enabled, the exception message will provide more details why the
      * match wasn't successful.
-     */
+     *//*
+
     @Override
     public void prepareForDecryption(PDEncryption encryption, COSArray documentIDArray,
         DecryptionMaterial decryptionMaterial)
@@ -321,13 +332,15 @@ public final class PublicKeySecurityHandler extends SecurityHandler
         }
     }
 
-    /**
+    */
+/**
      * Prepare the document for encryption.
      *
      * @param doc The document that will be encrypted.
      *
      * @throws IOException If there is an error while encrypting.
-     */
+     *//*
+
     @Override
     public void prepareDocumentForEncryption(PDDocument doc) throws IOException
     {
@@ -564,3 +577,4 @@ public final class PublicKeySecurityHandler extends SecurityHandler
         return new KeyTransRecipientInfo(recipientId, algorithmId, octets);
     }
 }
+*/
