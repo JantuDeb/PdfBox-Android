@@ -18,20 +18,6 @@ package com.tom_roush.pdfbox.pdmodel;
 
 import android.util.Log;
 
-import java.io.BufferedOutputStream;
-import java.io.Closeable;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
-
 import com.tom_roush.fontbox.ttf.TrueTypeFont;
 import com.tom_roush.pdfbox.cos.COSArray;
 import com.tom_roush.pdfbox.cos.COSBase;
@@ -73,6 +59,20 @@ import com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.SigningSupport;
 import com.tom_roush.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import com.tom_roush.pdfbox.pdmodel.interactive.form.PDField;
 import com.tom_roush.pdfbox.pdmodel.interactive.form.PDSignatureField;
+
+import java.io.BufferedOutputStream;
+import java.io.Closeable;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 /**
  * This is the in-memory representation of the PDF document.
@@ -1305,7 +1305,7 @@ public class PDDocument implements Closeable
      * Save the document to a file.
      * <p>
      * If encryption has been activated (with
-     * {@link #protect(com.tom_roush.pdfbox.pdmodel.encryption.ProtectionPolicy) protect(ProtectionPolicy)}),
+     * {@link protect(com.tom_roush.pdfbox.pdmodel.encryption.ProtectionPolicy) protect(ProtectionPolicy)}),
      * do not use the document after saving because the contents are now encrypted.
      *
      * @param fileName The file to save as.

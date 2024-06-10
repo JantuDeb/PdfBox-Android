@@ -21,7 +21,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.security.Provider;
 import java.security.Security;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+//import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
  * Singleton which provides a security provider.
@@ -42,6 +42,7 @@ public class SecurityProvider
      *
      * @throws IOException if the default provider can't be instantiated
      */
+/*
     public static Provider getProvider() throws IOException
     {
         // TODO synchronize access
@@ -79,6 +80,7 @@ public class SecurityProvider
         }
         return provider;
     }
+*/
 
     /**
      * Set the provider to be used for advanced encrypting/decrypting.

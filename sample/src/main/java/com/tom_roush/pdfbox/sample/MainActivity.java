@@ -42,7 +42,7 @@ import com.tom_roush.pdfbox.rendering.PDFRenderer;
 import com.tom_roush.pdfbox.text.PDFTextStripper;
 import com.tom_roush.pdfbox.android.PDFBoxResourceLoader;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+//import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 public class MainActivity extends Activity {
     File root;
@@ -271,8 +271,8 @@ public class MainActivity extends Activity {
         // Setups up the encryption parameters
         spp.setEncryptionKeyLength(keyLength);
         spp.setPermissions(ap);
-        BouncyCastleProvider provider = new BouncyCastleProvider();
-        Security.addProvider(provider);
+//        BouncyCastleProvider provider = new BouncyCastleProvider();
+//        Security.addProvider(provider);
 
         PDFont font = PDType1Font.HELVETICA;
         PDDocument document = new PDDocument();

@@ -50,9 +50,9 @@ public final class SecurityHandlerFactory
             StandardSecurityHandler.class,
             StandardProtectionPolicy.class);
 
-        registerHandler(PublicKeySecurityHandler.FILTER,
-            PublicKeySecurityHandler.class,
-            PublicKeyProtectionPolicy.class);
+//        registerHandler(PublicKeySecurityHandler.FILTER,
+//            PublicKeySecurityHandler.class,
+//            PublicKeyProtectionPolicy.class);
     }
 
     /**
